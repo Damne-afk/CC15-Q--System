@@ -88,6 +88,7 @@ class TimeForm(QMainWindow):
                 QtWidgets.QMessageBox.critical(self, 'Error', " Course Field Empty")
 
             else:
+                QtWidgets.QMessageBox.information(self,'Success','Room Reserve Success')
                 loginform = Login()
                 widget.addWidget(loginform)
                 widget.setCurrentIndex(widget.currentIndex() + 1)
